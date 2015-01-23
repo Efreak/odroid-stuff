@@ -52,8 +52,8 @@ EOT"
 
 sudo cat <<EOT > /apps/plexmediaserver/Binaries/start.sh
 #!/bin/sh
-#SCRIPTPATH=$(dirname $(python -c 'import sys,os;print os.path.realpath(sys.argv[1])' $0))
-SCRIPT=\$(readlink -f $0)
+#SCRIPTPATH=\$(dirname \$(python -c 'import sys,os;print os.path.realpath(sys.argv[1])' \$0))
+SCRIPT=\$(readlink -f \$0)
 SCRIPTPATH=\`dirname \${SCRIPT}\`
 export LD_LIBRARY_PATH="\${SCRIPTPATH}"
 export PLEX_MEDIA_SERVER_HOME="\${SCRIPTPATH}"
