@@ -5,6 +5,7 @@ dpkg -x /tmp/plex/plexmediaserver-ros6-binaries_0.9.11.7.803-87d0708_armel.deb /
 sudo mv /tmp/plex/apps /
 sudo mkdir /apps/plexmediaserver/temp
 sudo mkdir /apps/plexmediaserver/MediaLibrary
+sudo rm -rf /tmp/plex/
 sudo bash -c "cat <<EOT > /etc/init/plexmediaserver.conf
 # plexpms - service job file
 
