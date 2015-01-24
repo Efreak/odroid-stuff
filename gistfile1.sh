@@ -1,4 +1,6 @@
 sudo apt-get install -y libc6-armel gcc-multilib
+sudo locale-gen en_US.UTF-8
+sudo dpkg-reconfigure locales
 mkdir /tmp/plex
 wget -P /tmp/plex https://downloads.plex.tv/plex-media-server/0.9.11.7.803-87d0708/plexmediaserver-ros6-binaries_0.9.11.7.803-87d0708_armel.deb
 dpkg -x /tmp/plex/plexmediaserver-ros6-binaries_0.9.11.7.803-87d0708_armel.deb /tmp/plex
