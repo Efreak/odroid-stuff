@@ -48,3 +48,4 @@ mkdir /tmp/webui
 wget -P /tmp/webui/ https://github.com/ziahamza/webui-aria2/archive/master.zip
 unzip /tmp/webui/master.zip -d /tmp/webui/
 sudo mv /tmp/webui/webui-aria2-master /usr/share/nginx/html/aria2
+rm -rf /tmp/webui
