@@ -1,25 +1,20 @@
 sudo apt-get install -y aria2
 sudo mkdir /etc/aria2
 sudo bash -c "cat <<EOT > /etc/aria2/aria2.conf
-daemon
-allow-overwrite=false
-check-certificate=false
-auto-file-renaming=false
-dir=/var/run/usbmount/Media/
 enable-rpc=true
-rpc-listen-port=6800
 rpc-listen-all=true
+check-certificate=false
+auto-file-renaming=true
+dir=/var/run/usbmount/Media/Downloads/
 rpc-user=aria2
 rpc-passwd=aria2
 file-allocation=none
-enable-dht=false
 disable-ipv6=true
 max-download-limit=1500K
 max-overall-download-limit=1500K
 log=/var/log/aria2.log
 log-level=warn
 auto-save-interval=30
-save-session=/etc/aria2/aria2.sav
 EOT"
 
 sudo bash -c "cat <<EOT > /etc/init/aria2.conf
