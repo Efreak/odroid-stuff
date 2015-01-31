@@ -1,7 +1,11 @@
 sudo apt-get install -y aria2
 sudo mkdir /etc/aria2
+sudo touch /etc/aria2/aria2.session
 sudo bash -c "cat <<EOT > /etc/aria2/aria2.conf
+daemon=true
+continue=true
 enable-rpc=true
+rpc-listen-port=6800
 rpc-listen-all=true
 check-certificate=false
 auto-file-renaming=false
@@ -13,9 +17,18 @@ file-allocation=none
 disable-ipv6=true
 max-download-limit=0
 max-overall-download-limit=0
+max-concurrent-downloads=1
+max-connection-per-server=4
 log=/var/log/aria2.log
-log-level=warn
-auto-save-interval=30
+log-level=error
+summary-interval=120
+timeout=600
+retry-wait=30
+max-tries=50
+save-session=/etc/aria2/aria2.session
+input-file=etc/aria2/aria2.session
+save-session-interval=10
+disk-cache=25M
 EOT"
 
 sudo bash -c "cat <<EOT > /etc/init/aria2.conf
