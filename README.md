@@ -7,3 +7,7 @@ Interesting stuff:
 - [something with gpio](https://gist.github.com/knutmithut/502342acd38a4ea00061) - I'm not using GPIO, but it looked vaguely interesting.
 
 - [better aria2 daemon script](https://gist.github.com/jereksel/8217470)
+
+- [info on getting plex up](https://gist.github.com/gubi/a555eb646d2f191476bf) - haven't done anything with this, plex is working fine.
+
+

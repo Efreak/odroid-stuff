@@ -1,0 +1,31 @@
+A list of useful packages to install from the repos
+
+- language-pack-en-base (fix locales)
+- nano (editor)
+- bash-completion command-not-found (bash prompt stuff. autocomplete & install suggestion)
+- git
+- wget aria2 lynx whois rsync (web tools)
+- byobu (screen/tmux manager. Run byobu-enable afterward)
+- yasm make autoconf automake libtool build-essential pkg-config gettext mkvtoolnix (build env)
+- nodejs perl python
+- aptitude apt-fast (aptitude for resolving some dependencies easier, apt-fast for everything else)
+- p7zip-full unzip
+- iptables
+- mlocate (updatedb && locate somefile)
+- htop (better than top)
+- libx264-142 libx264-dev x264 libass4 libass-dev (if you want to compile ffmpeg for nonfree codecs...)
+- psmisc (lsof, etc)
+- cpufrequtils
+- smartmontools (if you have a usb hard drive attached)
+- iotop iftop (like top, but for viewing network and io use, not cpu)
+- tasksel
+- dnsutils
+- ssmtp - configure ssmtp to email you when something happens.
+- dphys-swapfile - configure an automounting swapfile instead of a partition
+- calibre - ebook server. Use the script to manage it.
+- qbittorrent-nox - headless qbittorrent.
+- samba cifs-utils nfs-kernel-server dnsmasq - networking
+- watchdog - keep the system up
+- keychain - manage ssh keys
+- bubbleupnpserver (you need to install the repo first)
+- nodejs (need to install repo first)
