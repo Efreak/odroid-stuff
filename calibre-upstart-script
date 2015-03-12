@@ -32,16 +32,26 @@ GID=calibre
 
 # Edit the CONTENT variable below to point it to your library directory.
 # Edit the PORT variable below to change the port the server will run on.
-# Edit the MAX_COVER variable below to change the maximum size of a book cover image.
+# Edit the MAX_COVER variable below to change the maximum size of a book cover image. (Default is 800x600)
 # Edit the USERNAME variable below to your desired username
 # Edit the PASSWORD variable below to your desired password
-CONTENT=/var/lib/calibre
+# Edit the MAX_OPDS_ITEMS variable below to change the maximum number of results on the first page of a search. Defaults to 30(?)
+# Edit the MAX_UNGROUPED variable below to change the maximum number of ungrouped results shown (eg, authors in a list, books in author) before it splits them alphabetically. Defaults to 100(?)
+# Edit the THREAD_POOL variable below to change the max number of worker threads to use. Default is 30
+# Edit the URL_PREFIX variable below to change the prefix to prepend to all URLs. Useful for reverseproxying to this server from Apache/nginx/etc.
+# Edit the TIMEOUT variable below to change the server timeout (in seconds). Defaults to 120.
+CONTENT="/var/lib/calibre"
 PORT=8080
-MAX_COVER=300x400
+MAX_COVER=400x300
 USERNAME=CALIBRE_USER
 PASSWORD=CALIBRE_PASSWORD
+MAX_OPDS_ITEMS=30
+MAX_UNGROUPED=100
+THREAD_POOL=30
+URL_PREFIX=/
+TIMEOUT=120
 
-DAEMON_ARGS="--auto-reload --with-library=$CONTENT --pidfile=$PIDFILE --port=$PORT --max-cover=$MAX_COVER --username=$USERNAME --password=$PASSWORD --daemonize"
+DAEMON_ARGS="--auto-reload --with-library=\"$CONTENT\" --pidfile=$PIDFILE --port=$PORT --max-cover=$MAX_COVER --username=$USERNAME --password=$PASSWORD --daemonize --max-opds-items=$MAX_OPDS_ITEMS --max-opds-ungrouped-items=$MAX_UNGROUPED --thread-pool=$THREAD_POOL --url-prefix=$URL_PREFIX --timeout=$TIMEOUT"
 SCRIPTNAME=/etc/init.d/$NAME
 
 # Exit if the package is not installed
