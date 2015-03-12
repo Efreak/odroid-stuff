@@ -11,6 +11,7 @@
 ### END INIT INFO
 # Original author: Alexandrdos Schillings
 # Modifications: K-Light
+# More Modifications: Efreak
 #
 # UPDATES:
 #  - Added USERNAME and PASSWORD to DAEMON_ARGS
@@ -22,6 +23,8 @@
 # PATH should only include /usr/* if it runs after the mountnfs.sh script
 #
 #
+# To use UID/GID calibre, sudo adduser calibre --no-create-home --system --disabled-login --group
+# You may wish to set calibre user's home directory to the library directory instead (use '--home DIR' instead of '--no-create-home --system')
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="Calibre Content Server"
 NAME=calibre-server
