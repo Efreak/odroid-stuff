@@ -10,4 +10,8 @@ Interesting stuff:
 
 - [info on getting plex up](https://gist.github.com/gubi/a555eb646d2f191476bf) - haven't done anything with this, plex is working fine.
 
+- [Installing ROS](https://github.com/ethz-asl/odroid_ros/wiki)
 
+- [Build a minimal Debian for the c1](https://github.com/tomuta/debian-mini-odroid-c1)
+
+- [Scripts for odroid as a server](https://github.com/meveric/odroid-server) - meveric also has some other arm stuff
