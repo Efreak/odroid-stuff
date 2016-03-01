@@ -28,4 +28,4 @@ A list of useful packages to install from the repos
 - watchdog - keep the system up
 - keychain - manage ssh keys
 - bubbleupnpserver (you need to install the repo first)
-- nodejs (need to install repo first)
+- nodejs (need to install repo first, probably prefer using nvm which automates building if necessary)
