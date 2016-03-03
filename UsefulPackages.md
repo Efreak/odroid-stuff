@@ -29,3 +29,4 @@ A list of useful packages to install from the repos
 - keychain - manage ssh keys
 - bubbleupnpserver (you need to install the repo first)
 - nodejs (need to install repo first, probably prefer using nvm which automates building if necessary)
+- [kapolos/armhf-x2go](https://github.com/kapolos/armhf-x2go) - @kapolos has somehow managed to compile x2go-server (including the problematic nxagent) for armhf. This will allow you to run your entire X environment on your odroid and connect to it from your desktop (windows, etc) using x2go client. Like screen for X.
